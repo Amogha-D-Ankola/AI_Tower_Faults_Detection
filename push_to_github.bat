@@ -2,7 +2,7 @@
 title Push Nova Grid to GitHub
 echo ========================================================
 echo   Pushing Nova Grid to GitHub
-echo   Repo: https://github.com/nl600946-stack/AI_Tower_Faults_Detection.git
+echo   Repo: https://github.com/Amogha-D-Ankola/AI_Tower_Faults_Detection.git
 echo ========================================================
 echo.
 set "PATH=C:\Program Files\Git\cmd;%PATH%"
