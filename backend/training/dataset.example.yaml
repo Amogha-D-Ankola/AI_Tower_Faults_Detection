@@ -1,0 +1,29 @@
+# Nova Grid - Transmission Tower Defect Dataset Configuration
+# ==========================================================
+# This YAML configuration defines dataset paths and fault classes
+# formatted for Ultralytics YOLOv8 training.
+#
+# Instructions:
+# 1. Download your annotated transmission tower dataset (e.g., from Roboflow in YOLOv8 format).
+# 2. Extract files into the `backend/datasets/` directory.
+# 3. Update the `path` below to point to your extracted directory.
+# 4. Copy this file to `dataset.yaml` and adjust classes if needed.
+
+# Root directory of the dataset (absolute path or relative to training run)
+path: ../datasets/transmission_towers
+
+# Train, validation, and test split subdirectories (relative to 'path')
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 5
+
+# Defect class names (must align with Roboflow annotation IDs: 0 to 4)
+names:
+  0: Damaged insulator
+  1: Corrosion
+  2: Missing component
+  3: Damaged wire
+  4: Other visible defect

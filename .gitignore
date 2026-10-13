@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+backend/venv/
+.venv/
+env/
+
+# Environment files
+.env
+!.env.example
+
+# Database
+backend/*.db
+backend/*.sqlite3
+
+# Storage (Uploaded and annotated images)
+backend/app/storage/uploads/*
+backend/app/storage/annotated/*
+!backend/app/storage/uploads/.gitkeep
+!backend/app/storage/annotated/.gitkeep
+
+# Models & weights (except documentation / placeholder)
+*.pt
+*.onnx
+backend/models/*.pt
+backend/models/*.onnx
+
+# Training runs & datasets
+runs/
+backend/training/runs/
+backend/datasets/*
+!backend/datasets/.gitkeep
+.pytest_cache/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+!frontend/.env.example
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
